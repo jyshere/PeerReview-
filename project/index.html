@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PeerReview+ Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Logo -->
+  <div class="logo">
+    <img src="logo.png" alt="PeerReview+ Logo">
+    <h1>PeerReview+</h1>
+  </div>
+
+  <!-- LOGIN PAGE -->
+  <div id="login-page" class="page visible">
+    <div class="card">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Enter your institutional email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <!-- STUDENT DASHBOARD -->
+  <div id="student-page" class="page">
+    <div class="header">
+      <h2 id="studentWelcome"></h2>
+      <div>
+        <button onclick="goToChangePassword()">Change Password</button>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+      </div>
+    </div>
+
+    <div class="upload-section">
+      <h3>Upload Your Assignment</h3>
+      <input type="file" id="fileInput" />
+      <button onclick="uploadAssignment()">Submit</button>
+    </div>
+
+    <div id="studentUploads" class="upload-list"></div>
+  </div>
+
+  <!-- FACULTY DASHBOARD -->
+  <div id="faculty-page" class="page">
+    <div class="header">
+      <h2 id="facultyWelcome"></h2>
+      <div>
+        <button onclick="goToChangePassword()">Change Password</button>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+      </div>
+    </div>
+
+    <div id="reviewList" class="review-list"></div>
+  </div>
+
+  <!-- CHANGE PASSWORD PAGE -->
+  <div id="change-pass-page" class="page">
+    <div class="card">
+      <h2>Change Password</h2>
+      <input type="password" id="oldPassword" placeholder="Enter old password" />
+      <input type="password" id="newPassword" placeholder="Enter new password" />
+      <input type="password" id="confirmPassword" placeholder="Confirm new password" />
+      <button onclick="updatePassword()">Update Password</button>
+      <button onclick="backToDashboard()" class="back-btn">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
