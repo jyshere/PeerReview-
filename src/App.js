@@ -19,9 +19,8 @@ function App() {
     const [isLogin ,setIsLogin]=useState(false);
     const navigate = useNavigate();
 
-  useEffect(() => {
-    navigate("/");
-  }, []);
+  
+    
 
   return (
     <div className="min-h-screen bg-white dark:bg-richblack-900 text-black dark:text-white">
