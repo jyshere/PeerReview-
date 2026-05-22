@@ -6,10 +6,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from"./pages/Home";
 import Login from"./pages/Login";
 import Signup from"./pages/Signup";
-import { Navigate,useNavigate } from "react-router-dom";
 import Contacts from "./pages/Contacts";
 import About from "./pages/About";
-import { useEffect } from "react";
 import Dashboard from "./components/Dashboard";
 
 
@@ -17,9 +15,6 @@ import Dashboard from "./components/Dashboard";
 function App() {
 
     const [isLogin ,setIsLogin]=useState(false);
-    const navigate = useNavigate();
-
-  
     
 
   return (
