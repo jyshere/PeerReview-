@@ -1,0 +1,43 @@
+/* Reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  min-height: 100vh;
+  @apply font-sans;
+  font-family: 'Special Elite', monospace;
+
+}
+
+/* Main wrapper */
+
+/* Page container */
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Center content pages (login/signup) */
+.center-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+/* Smooth transitions */
+button, input {
+  transition: all 0.2s ease-in-out;
+}
